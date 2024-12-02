@@ -18,8 +18,25 @@
         h1 {
             color: #333;
         }
+        .download-link {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        .download-link a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            background-color: #fff;
+            padding: 10px 15px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .download-link a:hover {
+            background-color: #ff9999;
+        }
         .calendar {
-            display: grid;
+            display: none;
             grid-template-columns: repeat(6, 1fr);
             gap: 10px;
         }
@@ -41,8 +58,10 @@
 </head>
 <body>
 <h1>Adventskalender</h1>
-<div class="calendar">
-    <!-- Ersetzen Sie diese Buttons mit entsprechenden JavaFX-Komponenten -->
+<div class="download-link">
+    <a href="path-to-your-file/adventskalender.jar" download="adventskalender.jar" id="download-link">Download JAR-Datei</a>
+</div>
+<div class="calendar" id="calendar">
     <button>1</button>
     <button>2</button>
     <button>3</button>
@@ -68,5 +87,13 @@
     <button>23</button>
     <button>24</button>
 </div>
+<script>
+    document.getElementById('download-link').addEventListener('click', function () {
+        // Verzögerung, um den Kalender nach dem Klicken sichtbar zu machen
+        setTimeout(function () {
+            document.getElementById('calendar').style.display = 'grid';
+        }, 1000); // Zeigt den Kalender nach 1 Sekunde an
+    });
+</script>
 </body>
 </html>
