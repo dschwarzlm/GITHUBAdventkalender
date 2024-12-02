@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventskalender</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #ffcccc, #ff9999);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            color: #333;
+        }
+        .download-link {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        .download-link a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            background-color: #fff;
+            padding: 10px 15px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .download-link a:hover {
+            background-color: #ff9999;
+        }
+        .calendar {
+            display: none;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 10px;
+        }
+        .calendar button {
+            width: 60px;
+            height: 60px;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: #fff;
+            border: 2px solid #ccc;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .calendar button:hover {
+            background-color: #ff9999;
+        }
+    </style>
+</head>
+<body>
+<h1>Adventskalender</h1>
+<div class="download-link">
+    <a href="download/adventskalender.jar" download="adventskalender.jar" id="download-link">Download JAR-Datei</a>
+    <!-- <a href="https://dschwarzlm.github.io/adventskalender/jar/advent-calendar.jar" download="advent-calendar.jar" id="download-link">Download JAR-Datei</a>-->
+
+ </div>
+ <div class="calendar" id="calendar">
+     <button>1</button>
+     <button>2</button>
+     <button>3</button>
+     <button>4</button>
+     <button>5</button>
+     <button>6</button>
+     <button>7</button>
+     <button>8</button>
+     <button>9</button>
+     <button>10</button>
+     <button>11</button>
+     <button>12</button>
+     <button>13</button>
+     <button>14</button>
+     <button>15</button>
+     <button>16</button>
+     <button>17</button>
+     <button>18</button>
+     <button>19</button>
+     <button>20</button>
+     <button>21</button>
+     <button>22</button>
+     <button>23</button>
+     <button>24</button>
+ </div>
+
+ </body>
+ </html>
